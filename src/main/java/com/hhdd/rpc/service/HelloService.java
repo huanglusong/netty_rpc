@@ -7,8 +7,9 @@ import lombok.extern.slf4j.Slf4j;
  * @Date 2025/1/18 16:18
  */
 @Slf4j
-public class HelloService {
+public class HelloService implements IHelloService{
 
+    @Override
     public String sayHello(String name) {
         log.info("hello {}!!!", name);
         return name;
